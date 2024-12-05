@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      {{ title }} - Tizzle Blog
+    </title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+  </head>
+  <body class="min-h-screen w-full bg-gray-200">
+    <main class="max-w-4xl mx-auto px-3">
+      {{{ await $slots.main() }}}
+    </main>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
